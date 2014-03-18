@@ -1,0 +1,38 @@
+{
+  "name": "easyredirect",
+  "main": "index.js",
+  "version": "0.0.1",
+  "description": "跳转中间件",
+  "author": {
+    "name": "继风",
+    "email": "wade428@163.com"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "homepage": "https://github.com/jifeng/redirect",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jifeng/redirect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jifeng/redirect/issues"
+  },
+  "dependencies": {
+    "options-stream": "*"
+  },
+  "devDependencies": {
+    "request": "*",
+    "connect": "*",
+    "supertest": "*",
+    "coffee-script": "1.6.3",
+    "mocha": "*",
+    "expect.js": "*",
+    "istanbul": "*"
+  },
+  "scripts": {
+    "prepublish": "make release",
+    "postpublish": "make clean",
+    "test": "make test"
+  }
+}
