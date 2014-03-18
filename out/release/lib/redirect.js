@@ -19,9 +19,6 @@ Redirect = (function() {
       if (this.url[this.url.length - 1] === '/') {
         this.url = this.url.substr(0, this.url.length - 1);
       }
-      if (this.url.indexOf('http://') < 0) {
-        this.url = "http://{url}";
-      }
     }
     this;
   }

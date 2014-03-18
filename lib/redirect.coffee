@@ -11,7 +11,6 @@ class Redirect
     if @options.url
       @url = @options.url
       @url = @url.substr(0, @url.length - 1) if @url[@url.length - 1] is '/'
-      @url = "http://{url}" if @url.indexOf('http://') < 0
     @
 
   middleware : () ->
